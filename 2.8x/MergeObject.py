@@ -2,7 +2,7 @@ import bpy
 
 def mergeObjects(obj1, obj2):
     """
-    Merge the two objects together by "union" boolean operation.
+    Merge the two objects together by "UNION" boolean operation.
     The second object is deleted after merge as it will be unnecessary.
     If the resulting object is not what you have expected,
     experiment with double_threshold for a different value or comment out the line.

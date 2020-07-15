@@ -2,7 +2,7 @@ import bpy
 
 def subtractObject(obj1, obj2):
     """
-    Remove part of obj1 that overlaps with obj2 by "subtract" boolean operation.
+    Remove part of obj1 that overlaps with obj2 by "DIFFERENCE" boolean operation.
     """
     bool1 = obj1.modifiers.new(type="BOOLEAN", name="subtract")
     bool1.object = obj2
