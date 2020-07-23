@@ -36,6 +36,8 @@ obj.rotation_euler[2] = math.radians(45) # rotate around Z axis
 ```
 
 ### Clear orphan meshes
+```Python
 for m in bpy.data.meshes:
     if m.users == 0:
         bpy.data.meshes.remove(m)
+```
