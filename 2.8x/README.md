@@ -34,3 +34,8 @@ obj.rotation_euler[0] = math.radians(12) # rotate around X axis
 obj.rotation_euler[1] = math.radians(30) # rotate around Y axis
 obj.rotation_euler[2] = math.radians(45) # rotate around Z axis
 ```
+
+### Clear orphan meshes
+for m in bpy.data.meshes:
+    if m.users == 0:
+        bpy.data.meshes.remove(m)
