@@ -35,6 +35,13 @@ obj.rotation_euler[1] = math.radians(30) # rotate around Y axis
 obj.rotation_euler[2] = math.radians(45) # rotate around Z axis
 ```
 
+### Add color to object
+```Python
+m = bpy.data.materials.new(name='RedColor')
+m.diffuse_color = (0.8, 0, 0, 1)
+obj.data.materials.append(m)
+```
+
 ### Clear orphan meshes
 ```Python
 for m in bpy.data.meshes:
