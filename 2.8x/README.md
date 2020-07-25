@@ -41,3 +41,10 @@ for m in bpy.data.meshes:
     if m.users == 0:
         bpy.data.meshes.remove(m)
 ```
+### Clear orphan materials
+Clearing an orphan mesh may produce orphan materials, e.g., when the object has color assigned.
+```Python
+for m in bpy.data.materials:
+    if m.users == 0:
+        bpy.data.materials.remove(m)
+```
