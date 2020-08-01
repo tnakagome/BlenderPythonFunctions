@@ -16,5 +16,6 @@ def text3D(string):
     # rotation and position
     text.rotation_euler[0] = math.radians(90)
     text.location = (0.4, -0.1, 0.5)
+    return text
 
 text3D('あいうえお')
