@@ -10,6 +10,7 @@ def text3D(string):
     text = bpy.data.objects.new("text1",textCurve)
     text.data.body = string
     text.data.font = font
+    text.data.size = 1.6
     bpy.context.scene.collection.objects.link(text)
     text.data.extrude = 0.1 # thickness
     # rotation and position
