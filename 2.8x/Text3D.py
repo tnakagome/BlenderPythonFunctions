@@ -18,4 +18,9 @@ def text3D(string):
     text.location = (0.4, -0.1, 0.5)
     return text
 
-text3D('あいうえお')
+text = text3D('あいうえお')
+
+# convert to mesh for editing
+text.select_set(True)
+bpy.context.view_layer.objects.active = text
+bpy.ops.object.convert(target='MESH')
