@@ -1,3 +1,5 @@
+import bpy
+
 def cleanupOrphanData():
     # Clear orphan meshes.
     for m in bpy.data.meshes:
