@@ -24,6 +24,14 @@ obj2.name = "New Object"
 myCollection.objects.link(obj2)
 ```
 
+### Join objects
+```Python
+obj1.select_set(True)
+obj2.select_set(True)
+obj3.select_set(True)
+bpy.ops.object.join()
+```
+
 ### Move object
 ```Python
 obj.location[0] += 10 # move to the right along X axis
