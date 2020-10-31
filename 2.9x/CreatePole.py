@@ -1,6 +1,6 @@
 import bpy
 
-def createPole(_x, _y, _z, _radius, _height, _segments, round=False):
+def createPole(_x, _y, _z, _radius, _height, _segments, _round=False):
     '''
     Create a pole with given parameters.
     The top of the pole can be rounded if the last parameter is True.
@@ -11,7 +11,7 @@ def createPole(_x, _y, _z, _radius, _height, _segments, round=False):
                     align='WORLD', location=(_x, _y, _z), scale=(1, 1, 1))
     pole = bpy.context.object
     pole.name = 'Pole'
-    if round:
+    if _round:
         # Round the top
         bpy.ops.object.mode_set(mode='EDIT')
         bpy.ops.mesh.select_all(action='DESELECT')
